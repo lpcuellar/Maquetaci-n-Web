@@ -382,11 +382,10 @@ body {
 }
 
 .flex__books {
-    //box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
     border-radius: 2rem;
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 400px;
     margin-top: 15rem;
     overflow: hidden;
     width: auto;
@@ -395,6 +394,7 @@ body {
 .principito {
     background-color: #ffffff;
     border-radius: 4rem;
+    box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
     display: block;
     height: 337px;
     overflow: hidden;
@@ -438,6 +438,7 @@ body {
 .fisica {
     background-color: #ffffff;
     border-radius: 4rem;
+    box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
     display: block;
     height: 337px;
     margin-left: 40px;
@@ -454,6 +455,7 @@ body {
 .calculo {
     background-color: #ffffff;
     border-radius: 4rem;
+    box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
     display: block;
     height: 337px;
     margin-left: 40px;
@@ -470,6 +472,7 @@ body {
 .matematicas {
     background-color: #ffffff;
     border-radius: 4rem;
+    box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
     display: block;
     height: 337px;
     margin-left: 40px;
