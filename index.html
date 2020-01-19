@@ -2,23 +2,138 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Laboratorio Maquetación</title>
 </head>
 
 <body>
     <div class="base">
-        <div class="upper__section">
-            <h1 class="school_name">Colegio Montano</h1>
-            <h2 class="site__info"> Libros electrónicos</h2>
-        </div>
-        <div class="table__content">
-            <div class="content__base">
-                <h2 class="content__packages">PAQUETES</h2>
-                <h2 class="grade"></h2>
+        <div class="flex__header">
+            <div class="flex__info">
+                <div class="school__name">
+                    <h1 class="school__name">Colegio Montano</h1>
+                </div>
+                <div class="site__info">
+                    <h1 class="site__info">Libros electrónicos</h1>
+                </div>
+                <div class="first__separator"></div>
+                <nav class="lock">
+                    <i class="material-icons">lock_open</i>
+                </nav>
+                <h1 class="passwords">CONTRASEÑAS</h1>
+                <div class="separator"></div>
+                <h1 class="student__name">John Doe</h1>
+                <nav class="dropdown">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </nav>
             </div>
-            </di>
         </div>
+        <div class="flex__main">
+            <div class="flex__content">
+                <h1 class="packages">PAQUETES</h1>
+                <div>
+                    <h1 class="grades" id="primero">Primero Básico (8)</h1>
+                    <h1 class="grades">Segundo Básico (12)</h1>
+                    <h1 class="grades">Segundo Básico (12)</h1>
+                    <h1 class="grades">Cuarto Bachillerato en Ciencias y Letras (5)</h1>
+                    <h1 class="grades">Quinto Bachillerato en Ciencias y Letras (5)</h1>
+                    <h1 class="grades">Cuarto Bachillerato en Ciencias y Letras (5)</h1>
+                    <h1 class="grades">Quinto Bachillerato en Ciencias y Letras (5)</h1>
+                </div>
+                <div class="horizontal__sep"></div>
+                <h1 class="add__package">AGREGAR PAQUETE:</h1>
+                <div class="flex__add">
+                    <div class="add__block">
+                        <h1 class="add__text">Escriba el nombre acá...</h1>
+                    </div>
+                    <nav class="add__icon">
+                        <i class="material-icons">add_circle</i>
+                    </nav>
+                </div>
+            </div>
+            <div class="flex__gradeinfo">
+                <div class="flex__upper">
+                    <h1 class="grade__display">Primero Básico</h1>
+                    <nav class="write">
+                        <i class="material-icons">create</i>
+                    </nav>
+                    <nav class="delete">
+                        <i class="material-icons">delete</i>
+                    </nav>
+                    <div class="add__book">
+                        <h1>AGREGAR LIBRO</h1>
+                    </div>
+                    <div class="add__category">
+                        <h1>AGREGAR CATEGORÍA</h1>
+                    </div>
+                </div>
+                <div class="flex__mid">
+                    <div class="divider1"></div>
+                    <div class="flex__categories">
+                        <div class="flex__SP">
+                            <h1>Idioma Español</h1>
+                            <nav class="del__SP">
+                                <i class="material-icons">delete</i>
+                            </nav>
+                        </div>
+                        <div class="flex__EN">
+                            <h1>Idioma Inglés</h1>
+                            <nav class="del__EN">
+                                <i class="material-icons">delete</i>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="divider2"></div>
+                    <div class="divider__selector"></div>
+                </div>
+                <div class="flex__books">
+                    <div class="principito">
+                        <div class="image__principito" style="background-image: url(https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG);"></div>
+                        <div class="footer">
+                            <h1 class="book__name">El Principito de Antoine...</h1>
+                            <h1 class="book__size">15mb</h1>
+                            <nav class="options">
+                                <i class="material-icons">more_vert</i>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="fisica">
+                        <div class="image__fisica" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                        <div class="footer">
+                            <h1 class="book__name">Física de Serway</h1>
+                            <h1 class="book__size">15mb</h1>
+                            <nav class="options">
+                                <i class="material-icons">more_vert</i>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="calculo">
+                        <div class="image__calculo" style="background-image: url(https://i.pinimg.com/originals/ef/7d/42/ef7d42fcc7271394ed0b264b9d089620.jpg);"></div>
+                        <div class="footer">
+                            <h1 class="book__name">Cálculo</h1>
+                            <h1 class="book__size">15mb</h1>
+                            <nav class="options">
+                                <i class="material-icons">more_vert</i>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="matematicas">
+                        <div class="image__matematicas" style="background-image: url(https://statics.convergencia.trevenque.es/portadas/Originales/PUBLIDISA_3/PUB0190599.jpg);"></div>
+                        <div class="footer">
+                            <h1 class="book__name">Matemáticas 2</h1>
+                            <h1 class="book__size">15mb</h1>
+                            <nav class="options">
+                                <i class="material-icons">more_vert</i>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 
 </html>

@@ -1,7 +1,489 @@
-.base {
-    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.75);
+html,
+body {
+    font-size: 4px;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f1f6f6;
+}
+
+.flex__header {
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    line-height: 11rem;
+    position: relative;
+    text-align: left;
+    width: auto;
+}
+
+.flex__info {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    line-height: 11rem;
+    position: relative;
+    text-align: left;
+    width: auto;
+}
+
+.school__name {
+    color: #00a09b;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-left: 7rem;
+    width: 275px;
+}
+
+.site__info {
+    color: #bdbdbd;
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 20rem;
+    margin-left: 7rem;
+    width: 200px;
+}
+
+.first__separator {
+    border-left: 1px solid #bdbdbd;
+    height: 16rem;
+    margin-left: 940px;
+    margin-top: 2rem;
+    opacity: 15%;
+}
+
+.passwords {
+    color: #00c4c0;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.lock>.material-icons {
+    background-position: center;
+    background-size: cover;
+    color: #00c4c0;
     display: block;
-    height: 908px;
-    margin-bottom: 2rem;
-    width: 1920px;
+    height: 8rem;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    transform: scaleX(-1);
+}
+
+.separator {
+    border-left: 1px solid #bdbdbd;
+    height: 16rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    opacity: 15%;
+}
+
+.student__name {
+    color: #00a09b;
+    font-size: 6rem;
+    font-weight: bold;
+    height: 5rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.dropdown>.material-icons {
+    background-position: center;
+    background-size: cover;
+    color: #00a09b;
+    display: block;
+    height: 13rem;
+    margin-left: 2rem;
+    margin-top: 7rem;
+}
+
+.flex__content {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    line-height: 11rem;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    margin: 0px 2px 2px 0px #747e7e;
+    overflow: hidden;
+    position: absolute;
+    text-align: left;
+    width: 85rem;
+}
+
+.packages {
+    color: #e1e6e6;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 3rem;
+    margin-left: 7rem;
+    margin-top: 8rem;
+}
+
+.grades {
+    background-color: #ffffff;
+    border: none;
+    color: #747e7e;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 7rem;
+    margin-right: 100rem;
+    margin-top: 8rem;
+    text-align: left;
+    width: 70rem;
+}
+
+#primero {
+    background-color: #ffffff;
+    border: none;
+    color: #019c97;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 24px;
+    margin-left: 7rem;
+    margin-right: 100rem;
+    margin-top: 8rem;
+    text-align: left;
+    text-decoration: underline;
+    width: 70rem;
+}
+
+.grades:hover {
+    border: none;
+    color: #019c97;
+    text-decoration: underline #019c97;
+    font-weight: 550;
+}
+
+.grades:focus {
+    border: none;
+    color: #019c97;
+    text-decoration: underline #019c97;
+    font-weight: 550;
+}
+
+.horizontal__sep {
+    border-top: 1px solid #bdbdbd;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 8rem;
+    opacity: 15%;
+    width: 65rem;
+}
+
+.add__package {
+    color: #00a09b;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 7rem;
+    margin-top: 6rem;
+}
+
+.flex__add {
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 3rem;
+    width: auto;
+}
+
+.add__block {
+    background-color: #f1f6f6;
+    border-radius: 24rem;
+    border: 1px solid #dde4e4;
+    display: block;
+    height: 10rem;
+    line-height: 8rem;
+    margin-bottom: 10rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    width: 59rem;
+}
+
+.add__text {
+    color: #c0c0c0;
+    font-size: 4rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.add__icon>.material-icons {
+    background-position: center;
+    background-size: cover;
+    color: #00a09b;
+    font-size: 56px;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    margin-top: -6px;
+}
+
+.flex__main {
+    background-color: #f1f6f6;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    line-height: 11rem;
+    overflow: hidden;
+    text-align: left;
+    width: auto;
+}
+
+.flex__gradeinfo {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 120rem;
+    margin-top: 12rem;
+    width: auto;
+}
+
+.flex__upper {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+.grade__display {
+    color: #00938e;
+    font-size: 29px;
+    font-weight: 200;
+    line-height: 11rem;
+}
+
+.write>.material-icons {
+    background-position: center;
+    background-size: cover;
+    color: #a0aaaa;
+    font-size: 32px;
+    margin-left: 6rem;
+    margin-top: 6rem;
+}
+
+.delete>.material-icons {
+    background-position: center;
+    background-size: cover;
+    color: #c78181;
+    font-size: 32px;
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+.add__book {
+    background-color: #00bc5d;
+    border-radius: 24rem;
+    color: #ffffff;
+    display: block;
+    font-size: 6px;
+    font-weight: 1000;
+    height: 10rem;
+    line-height: 6rem;
+    margin-left: 160rem;
+    margin-top: 4rem;
+    text-align: center;
+    width: 48rem;
+}
+
+.add__category {
+    background-color: #00bcb7;
+    border-radius: 24rem;
+    color: #ffffff;
+    display: block;
+    font-size: 6px;
+    font-weight: 1000;
+    height: 10rem;
+    line-height: 6rem;
+    margin-left: 6rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    text-align: center;
+    width: 48rem;
+}
+
+.flex__mid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+    width: auto;
+}
+
+.divider1 {
+    border-top: 1px solid #bdbdbd;
+    margin-left: -10rem;
+    margin-top: 0rem;
+    opacity: 35%;
+    width: 360rem;
+}
+
+.flex__categories {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    text-align: left;
+    width: auto;
+}
+
+.flex__SP {
+    color: #019c97;
+    display: flex;
+    flex-direction: row;
+    font-size: 8px;
+}
+
+.del__SP>.material-icons {
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+.flex__EN {
+    color: #a6a7a7;
+    display: flex;
+    flex-direction: row;
+    font-size: 8px;
+    margin-left: 20rem;
+}
+
+.del__EN>.material-icons {
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+.divider2 {
+    border-top: 1px solid #bdbdbd;
+    margin-left: -10rem;
+    margin-top: 0rem;
+    opacity: 35%;
+    width: 360rem;
+}
+
+.divider__selector {
+    border-top: 5px solid #019c97;
+    margin-left: -5rem;
+    margin-top: -3px;
+    opacity: 100%;
+    width: 52rem;
+    z-index: 1;
+}
+
+.flex__books {
+    //box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.45);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-top: 15rem;
+    overflow: hidden;
+    width: auto;
+}
+
+.principito {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    display: block;
+    height: 337px;
+    overflow: hidden;
+    width: 226px;
+}
+
+.image__principito {
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+}
+
+.footer {
+    background-color: #ffffff;
+    display: block;
+    margin-top: -3rem;
+}
+
+.book__name {
+    color: #019c97;
+    font-size: 14px;
+    margin-left: 6rem;
+    margin-top: 0rem;
+}
+
+.book__size {
+    color: #777777;
+    font-size: 10px;
+    margin-left: 6rem;
+    margin-top: -9rem;
+}
+
+.options {
+    height: 4rem;
+    margin-left: 195px;
+    margin-top: -11rem;
+    position: relative;
+    width: 3rem;
+}
+
+.fisica {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    display: block;
+    height: 337px;
+    margin-left: 40px;
+    overflow: hidden;
+    width: 226px;
+}
+
+.image__fisica {
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+}
+
+.calculo {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    display: block;
+    height: 337px;
+    margin-left: 40px;
+    overflow: hidden;
+    width: 226px;
+}
+
+.image__calculo {
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+}
+
+.matematicas {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    display: block;
+    height: 337px;
+    margin-left: 40px;
+    overflow: hidden;
+    width: 226px;
+}
+
+.image__matematicas {
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+}
+
+.options>.material-icons {
+    color: #d6e1e1;
+    font-weight: 800;
 }
